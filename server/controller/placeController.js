@@ -18,7 +18,6 @@ const uploadByLink = async(req, res) => {
         const {link} = req.body;
 
         const uploadsFolder = path.join(__dirname, '..', 'uploads/');
-        // console.log(uploadsFolder);
 
         const newName = Date.now()+".jpg";
 
@@ -46,7 +45,6 @@ const uploadPhoto = async(req, res) => {
     try
     {
         const uploadedFiles = [];
-        console.log(req.files);
         for(let i=0; i<req.files.length; i++)
         {
             const {path, originalname} = req.files[i];
@@ -151,7 +149,6 @@ const eidtPlace = async(req, res) => {
         const {id, title, address, addedPhotos, description, perks, extraInfo, checkIn, checkOut, maxGuests, price} = req.body;
         const token = req.headers.authorization?.split(' ')[1];
         const userData = jwt.verify(token, jwtSecret);
-        // console.log(userData);
 
         const placeDoc = await PlaceModel.findById(id);
 

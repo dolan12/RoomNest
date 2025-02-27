@@ -33,7 +33,6 @@ const Login = () => {
         {
             formData[key] = formRefs[key].current.value;
         }
-        // console.log(formData);
 
         try
         {

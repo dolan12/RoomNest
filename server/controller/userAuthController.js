@@ -29,8 +29,7 @@ const register = async(req, res) => {
                 email,
                 password:hashedPassword
             });
-
-            // console.log(newUser);
+            
             res.status(201).json(newUser);
         }
     }

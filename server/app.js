@@ -19,7 +19,7 @@ app.use("/uploads", express.static(__dirname+"/uploads")); // For getting images
 
 app.use(cors({
     credentials: true,
-    origin: [ "http://localhost:3000" ],
+    origin: [ "https://roomnest.onrender.com" ],
 }));
 
 

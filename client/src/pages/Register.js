@@ -47,7 +47,6 @@ const Register = () => {
 
         if(passwordValidIcon)
         {
-            // console.log(formRefs);
 
             const formData = {};
 
@@ -58,7 +57,6 @@ const Register = () => {
                 : formRefs[key].current;
             }
 
-            // console.log(formData);
             
             try
             {
